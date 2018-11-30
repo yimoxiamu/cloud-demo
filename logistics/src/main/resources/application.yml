@@ -1,0 +1,17 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka/
+logistics-service:
+  ribbon:
+    listOfServers: http://localhost:8762,http://localhost:8763,http://localhost:8764
+server:
+    port: 8764
+spring:
+    application:
+        name: logistics-service
+    datasource:
+      username: root
+      password: axiamu
+      url: jdbc:mysql://154.8.218.29:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      driver-class-name: com.mysql.jdbc.Driver
